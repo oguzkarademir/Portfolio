@@ -19,7 +19,7 @@
     "start": "node server.js",
     "start-client": "cd client && yarn start ",
     "dev": "concurrently -n 'server,client' -c 'red,yellow' \"npm run start\" \" npm run start-client\"",
-    "heroku-postbuild": "npm install --prefix client && npm build --prefix client"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
