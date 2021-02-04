@@ -1,38 +1,189 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets/cup-2619216_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.app {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+.myname {
+  font-family: 'Lexend Peta', sans-serif;
+  font-size: 50px !important;
+  line-height: 50px !important;
+  color: #7E8105 !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+  font-family: 'Lexend Peta', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 57px;
+  color: #7E8105 !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu:hover {
+  color: #b60404 !important;
+}
+
+.hamburger {
+  font-size: 30px;
+  color:  #7E8105;
+}
+
+.home-intro {
+  font-family: 'Lexend Peta', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 72px;
+  color: #a3a3a3a9;
+}
+.card-style {
+  background: rgba(255, 255, 255, 0.486) !important;
+  border-radius: 30px !important;
+}
+.card-title {
+  font-family: 'Lexend Peta', sans-serif;
+  font-weight: 900;
+  font-size: 28px !important;
+  line-height: 36px;
+  color: rgba(173, 3, 3, 0.986) !important;
+}
+.card-tit {
+  font-family: 'Lexend Peta', sans-serif;
+  font-weight: 900;
+  font-size: 28px !important;
+  line-height: 36px;
+  color:white !important;
+}
+.card-desc {
+  font-family: 'Lexend Peta', sans-serif;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 20px !important;
+  line-height: 36px;
+  color: #FEE715FF !important;
+}
+.card-link {
+  margin-left: 0 !important;
+  font-family: 'Lexend Peta', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px !important;
+  line-height: 36px;
+  cursor: pointer;
+  color: #000000;
+}
+.code-icon {
+  color: red;
+}
+
+/* About page */
+.about-intro{
+  font-family: 'Lexend Peta', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  color: #a3a3a3a9;
+}
+
+/* card style */
+.card-style {
+  width: 100%;
+  position: relative;
+}
+.overlay {
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
+  background-color: rgba(0,0,0,0.5);
+}
+.card-imag{
+  width: 100%;
+  height: 400px;
+}
+.card-style:hover .card-imag {
+  opacity: 0.1;
+}
+.card-style:hover .overlay {
+  opacity: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* cv */
+button.btn-cv.m-3.btn.btn-primary {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Project page */
+.proj-title {
+  font-family: 'Lexend Peta', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 57px;
+  color: #7E8105 !important;
+}
+.proj-cate {
+  font-family: 'Lexend Peta', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 57px;
+  color: rgba(173, 3, 3, 0.986) !important;
+}
+.proj-desc {
+  font-family: 'Lexend Peta', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  color: #a3a3a3a9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* Portrait phones and smaller */
+@media (max-width: 575px) {
+  .myname {
+    font-size: 23px !important;
+    line-height: 50px !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card-title {
+    font-size: 24px !important;
+    line-height: 24px;
+    color: red !important;
   }
-}
+  .card-desc {
+    margin-top: 10px;
+    font-size: 18px !important;
+    line-height: 20px;
+    color: #FEE715FF !important;
+  }
+
+  .card-imag{
+    height: 300px;
+  }
+} 
