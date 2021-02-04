@@ -20,6 +20,9 @@ connectDatabase()
 //     path:".env"
 // })
 
+app.use("/api", projectRouter);
+app.use("/api", articleRouter);
+
 app.use(express.static(path.join(__dirname, '/client/build')));
 
 app.get('*', function (req, res) {
@@ -33,10 +36,6 @@ app.get('*', function (req, res) {
 //         res.sendFile(path.resolve(_dirname, "client", "build", "index.html"))
 //     })
 // }
-
-
-app.use("/api", projectRouter);
-app.use("/api", articleRouter);
 
 app.listen(process.env.PORT || 5000,()=>{
     console.log( `Server started on http://localhost:${process.env.PORT || 5000}`)
