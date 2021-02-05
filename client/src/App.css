@@ -80,7 +80,7 @@ body {
   line-height: 36px;
   color: #FEE715FF !important;
 }
-.card-link {
+.card-link, .home-link {
   margin-left: 0 !important;
   font-family: 'Lexend Peta', sans-serif;
   font-style: normal;

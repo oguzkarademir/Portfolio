@@ -45,19 +45,19 @@ export const Homepage = () => {
                           state:{
                             project: lastP
                           }
-                        }} className="mt-4"><BsFileCode style={{color:"#6D0000", marginRight:"10px"}}/>{lastP?.title}</Link>
+                        }} className="mt-4 home-link"><BsFileCode style={{color:"#6D0000", marginRight:"10px"}}/>{lastP?.title}</Link>
                         <Link to={{
                           pathname:`/projects/${secondP?._id}`,
                           state:{
                             project: secondP
                           }
-                        }} className="mt-4"><BsFileCode style={{color:"#6D0000", marginRight:"10px"}}/>{secondP?.title}</Link>
+                        }} className="mt-4 home-link"><BsFileCode style={{color:"#6D0000", marginRight:"10px"}}/>{secondP?.title}</Link>
                         <Link to={{
                           pathname:`/projects/${thirdP?._id}`,
                           state:{
                             project: thirdP
                           }
-                        }} className="mt-4"><BsFileCode style={{color:"#6D0000", marginRight:"10px"}}/>{thirdP?.title}</Link>
+                        }} className="mt-4 home-link"><BsFileCode style={{color:"#6D0000", marginRight:"10px"}}/>{thirdP?.title}</Link>
                     </ListGroup>
                 </Card>
             </Row>
