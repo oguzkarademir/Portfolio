@@ -24,7 +24,7 @@ export const ProjectCard = ({project}) => {
           <Card.ImgOverlay>
             <Card.Title className="card-tit">{project.title}</Card.Title>
             <Card.Text className="card-desc">
-              {project.description}
+              {project.category}
             </Card.Text>
           </Card.ImgOverlay>
         </div>

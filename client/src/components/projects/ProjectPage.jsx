@@ -32,7 +32,7 @@ export const ProjectPage = (props) => {
           {project.description}
         </p>
       </Row>
-      <Row className="d-flex justify-content-between">
+      <Row className="d-flex mb-5 justify-content-between">
           <Button style={{
                   color:"rgba(173, 3, 3, 0.986)", 
                   fontWeight:"500", 

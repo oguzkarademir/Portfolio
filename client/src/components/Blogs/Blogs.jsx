@@ -22,9 +22,14 @@ export const Blogs = () => {
         <Row>
             {
             data.length === 0 ? (
-                                    <div className="spinner-border text-success m-5" role="status">
-                                        <span className="sr-only">Loading...</span>
-                                    </div>
+                                    <Col className="d-flex align-items-center justify-content-center" 
+                                    style={{
+                                    width:"100%",
+                                    color:"#a3a3a3a9",
+                                    marginTop:"50px",
+                                    fontSize:"32px"}}>
+                                        I will be adding content soon
+                                    </Col>
             ) : (
                                     data.map((article) => {
                                         return (

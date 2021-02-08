@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import myImg from "../../assets/T91PPTG9H-U013BC7JTJM-13a0099dfd7d-192.png";
 
 export const BlogCard = ({article}) => {
 
