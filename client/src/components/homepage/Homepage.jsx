@@ -31,13 +31,13 @@ export const Homepage = () => {
 
   return (
     <Container fluid>
-      <Row className="p-5">
-        <Col xs={12} lg={6} className="home-intro p-5 d-flex align-items-center justify-content-center">
+      <Row className="p-3">
+        <Col xs={12} lg={6} className="home-intro d-flex align-items-center justify-content-center">
             Hi It’s Oguz and I am a frontend developer. Here I will share my own works and articles.
         </Col>
         <Col xs={12} lg={6}>
             <Row className="pt-4 d-flex justify-content-center">
-                <Card className="p-4 card-style" style={{width:"36rem", height:"20rem"}}>
+                <Card className="p-4 card-style" style={{width:"36rem", height:"18rem"}}>
                     <Card.Title style={{color:"black"}}>Latest Project</Card.Title>
                     <ListGroup variant="flush">
                         <Link to={{
@@ -62,7 +62,7 @@ export const Homepage = () => {
                 </Card>
             </Row>
             <Row className="pt-4 d-flex justify-content-center">
-                <Card className="p-4 card-style" style={{width:"36rem", height:"20rem"}}>
+                <Card className="p-4 card-style" style={{width:"36rem", height:"18rem"}}>
                     <Card.Title style={{color:"black"}}>Latest Articles</Card.Title>
                     <ListGroup variant="flush">
                         <Card.Link href={lastA?.medium_url} target="_blank" className="mt-4"><AiFillRead style={{color:"#6D0000", marginRight:"10px"}}/>{lastA?.title}</Card.Link>
