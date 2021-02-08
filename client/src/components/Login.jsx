@@ -30,10 +30,10 @@ export const Login = () => {
      }
 
   return (
-    <Container className="p-5">
-      <Row className="p-5 justify-content-center">
-          <h2 className="text-center p-5 row justify-content-center" style={{color:" #a3a3a3a9"}}>
-              Login if you are Oguz Karademir.<br /> This is just the way I add content to the website.
+    <Container>
+      <Row className="justify-content-center">
+          <h2 className="text-center p-3 row justify-content-center" style={{color:" #a3a3a3a9"}}>
+              This is just the way I add contents.
           </h2>
       </Row>
       <Row className="p-2 justify-content-center">
@@ -44,23 +44,23 @@ export const Login = () => {
               <Form.Group >
                   <Form.Control type="password" placeholder="Admin password" onChange={(e)=>setPassword(e.target.value)}/>
               </Form.Group>
-              <Button 
+              <Button  
               type="submit"
               style={{
                   color:"rgba(173, 3, 3, 0.986)", 
                   fontWeight:"500", 
-                  backgroundColor:" white", 
+                  background:"none", 
                   border:"none",
                   height:"38px",
-                  marginLeft:"15px"}}
+                  marginLeft:"5px"}}
                   >
-                      Go to add page <FiArrowRightCircle style={{fontSize:"20px"}}/>
+                    <FiArrowRightCircle style={{fontSize:"35px"}}/>
               </Button>
-              <Button 
+              {/* <Button 
               onClick={()=>firebase.signOut()}
               >
                   sign out
-              </Button>
+              </Button> */}
           </Form>
       </Row>
     </Container>

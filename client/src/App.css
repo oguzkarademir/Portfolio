@@ -5,7 +5,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -13,6 +12,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 100px;
 }
 
 .app {
@@ -166,6 +169,13 @@ button.btn-cv.m-3.btn.btn-primary {
   font-size: 22px;
   line-height: 40px;
   color: #a3a3a3a9;
+}
+
+.navbar-fixed-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
 }
 
 

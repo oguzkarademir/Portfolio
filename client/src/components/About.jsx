@@ -4,8 +4,8 @@ import myImg from "../assets/T91PPTG9H-U013BC7JTJM-13a0099dfd7d-192.png";
 
 export const About = () => {
   return (
-    <Container fluid>
-      <Row className="p-3" style={{ color: "white" }}>
+    <Container fluid >
+      <Row className="p-3 pt-5" style={{ color: "white" }}>
         <Col
           xs={12}
           lg={4}
