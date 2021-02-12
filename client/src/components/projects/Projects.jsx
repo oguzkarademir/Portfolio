@@ -12,7 +12,6 @@ export const Projects = () => {
   }, []);
 
   const data = useSelector((state) => state.projects.projects);
-  console.log(data)
 
   return (
     <Row>

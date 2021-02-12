@@ -4,8 +4,6 @@ import { Link } from "react-router-dom"
 
 export const ProjectCard = ({project}) => {
 
-  console.log(project)
-
   return (
     <Card className="card-style m-3 rounded mb-0 bg-dark text-white">
       <Link href={`/projects/${project._id}`} to={{

@@ -15,9 +15,7 @@ export const Blogs = () => {
     }, []);
 
     const data = useSelector((state) => state.articles.articles);
-
-    console.log(data)
-
+    
     return (
         <Row>
             {

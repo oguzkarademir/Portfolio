@@ -24,7 +24,6 @@ function App() {
   const dispatch = useDispatch();
 
   const loginStatus = useSelector(state => state.auth.loginStatus)
-  console.log(firebase)
 
   useEffect(()=>{
     firebase.firebase.auth().setPersistence(firebase.firebase.auth.Auth.Persistence.SESSION)
