@@ -2,7 +2,7 @@ const Project = require ("../models/project")
 
 const getAllProjectsController = (req, res) => {
 
-    Project.find()
+    Project.find().sort({createdAt:"desc"})
         .then((data) => {
             console.log(data);
             res.status(200).send(data);

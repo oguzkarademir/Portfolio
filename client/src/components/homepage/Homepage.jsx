@@ -21,13 +21,13 @@ export const Homepage = () => {
   const projects = useSelector((state) => state.projects.projects);
   const articles = useSelector((state) => state.articles.articles);
 
-  const lastP = projects[projects.length - 1];
-  const secondP = projects[projects.length - 2];
-  const thirdP = projects[projects.length - 3];
+  const lastP = projects[0];
+  const secondP = projects[1];
+  const thirdP = projects[2];
 
-  const lastA = articles[articles.length - 1];
-  const secondA = articles[articles.length - 2];
-  const thirdA = articles[articles.length - 3];
+  const lastA = articles[0];
+  const secondA = articles[1];
+  const thirdA = articles[2];
 
   return (
     <Container fluid>
